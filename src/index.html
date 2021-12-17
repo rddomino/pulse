@@ -7,6 +7,7 @@
     <title>Pulse</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -59,7 +60,7 @@
 
     </div> <!-- promo -->
 
-    <div class="advantage">
+    <section class="advantage">
         <div class="container">
 
             <h2 class="advantage__title">НАШИ ПРЕИМУЩЕСТВА</h2>
@@ -86,23 +87,49 @@
             </div>
 
         </div>
-    </div> <!-- advantages -->
+    </section> <!-- advantages -->
 
-    <div class="consultation">
+    <section class="consultation">
         <div class="container">
 
             <h2 class="consultation__title">Получите бесплатную консультацию по подбору пульсометра</h2>
-            <div class="consultation__descr">Просто заполните форму заявки  и мы перезвоним вам в течении 10</div>
-            <form action="#" class="feed-form">
-                <input type="text" placeholder="Ваше имя" id="name">
-                <input type="text" placeholder="Ваш телефон" id="telephone">
-                <input type="text" placeholder="Ваш E-mail" id="email">
+            <div class="consultation__descr">Просто заполните форму заявки  и мы перезвоним вам в течении 10 минут</div>
+            
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text"> 
+                <input name="phone" required placeholder="Ваш телефон"> 
+                <input name="email" required placeholder="Ваш E-mail" type="email"> 
 
                 <button class="button button_submit">заказать консультацию</button>
             </form>
 
         </div>
-    </div> <!-- consultation -->
+    </section> <!-- consultation -->
 
+    <div class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/slide_1.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/slide_2.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/slide_3.jpg" alt="slide">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section> <!-- carousel -->
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
